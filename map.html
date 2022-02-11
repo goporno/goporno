@@ -1,7 +1,19 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<script language="JavaScript">
+
+<!--
+var password="";
+password=prompt('请输入密码进入！！！     本应用只适于Android用户！！！     本应用只对购买全部三季的会员开放！！！ ','');
+if (password != 'huniandaji')   
+    {alert("密码不正确,无法进入本站!!");    
+    window.opener=null; window.close();}  // 密码不正确就关闭//--></script>
+
+
+
+<meta https-equiv="Content-Type" content="text/html; charset=GBK">
 
 <meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具">
 <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图">
@@ -12,7 +24,7 @@
     .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
     .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
 </style>
-<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4"></script>
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=1.4"></script>
 </head>
 
 <body>
@@ -32,8 +44,8 @@
     //创建地图函数：
     function createMap(){
         var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-        var point = new BMap.Point(121.48,31.236);//定义一个中心点坐标
-        map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+        var point = new BMap.Point(121.486,31.234);//定义一个中心点坐标
+        map.centerAndZoom(point,8);//设定地图的中心点和坐标并将地图显示在地图容器中
         window.map = map;//将map变量存储在全局
     }
     
@@ -145,6 +157,26 @@
 		 ,{title:"稻香新村",content:"位置：滨湖区唐巷路&nbsp;稻香新村",point:"120.286857|31.551621",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
 		 ,{title:"南扬新村",content:"位置：梁溪区通扬路94号&nbsp;南扬新村",point:"120.31663|31.557624",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
 		 ,{title:"芦庄二社区",content:"位置：滨湖区金石东路芦庄六区小区-东区&nbsp;周边门面<br/>服务：150-250&nbsp;吹+做<br/>备注：晚上开张",point:"120.314916|31.528208",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ,{title:"真真足道",content:"位置：横浜路近宝山路&nbsp;真真足道&nbsp;&nbsp;边上还有一家&nbsp;菊韵足浴&nbsp;<br/>服务：150吹&nbsp;200做<br/>备注：少妇&nbsp;熟女为主",point:"121.485773|31.269337",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ,{title:"舒心阁",content:"位置：常德路&nbsp;余姚路&nbsp;舒心阁<br/>服务：150-250&nbsp;按摩+口暴<br/>备注：有的技师小费300块可以干",point:"121.447174|31.242611",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ,{title:"书琴足浴",content:"位置：下南路1085号&nbsp;书琴足浴<br/>服务：100-150&nbsp;飞机&nbsp;口暴<br/>备注：少妇&nbsp;熟女为主",point:"121.541643|31.190529",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ,{title:"禾庄棋牌",content:"位置：水电路1345号<br/>服务：按摩&nbsp;推油&nbsp;飞机&nbsp;380<br/>备注：妹子漂亮&nbsp;但是贵",point:"121.483232|31.302281",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ,{title:"长寿路胶州路",content:"位置：长寿路胶州路&nbsp;长寿路上面美甲店&nbsp;左边玻璃门&nbsp;地下一层<br/>服务：300&nbsp;按摩&nbsp;飞机&nbsp;口暴<br/>备注：&nbsp;偶尔有嫩妹",point:"121.4423|31.244841",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ,{title:"楼凤&nbsp;熟女",content:"位置：新市桥附件<br/>服务：全套服务300&nbsp;另外需要自己开房<br/>备注：QQ&nbsp;623308295&nbsp;态度很好",point:"120.617849|31.296461",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ,{title:"红灯笼浴场",content:"位置：太仓市郑和北路91号<br/>服务：吹+做&nbsp;200-300&nbsp;有嫩妹<br/>备注：一定要先联系好鸡头&nbsp;微信&nbsp;13815272987",point:"121.269963|31.507575",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ,{title:"君逸阁养生会所",content:"位置：锡山区锡沪路豪门·君怡花苑<br/>服务：推油口暴&nbsp;330<br/>备注：服务不错&nbsp;少妇为主",point:"120.372866|31.586989",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ,{title:"塞纳河畔温泉会所",content:"位置：崇川区城山路锦安花苑附12幢<br/>服务：500&nbsp;全套<br/>备注：妹子质量可以&nbsp;少妇为主",point:"120.884862|31.999074",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ,{title:"世纪华联超市附近",content:"位置：嘉善县枫南新区477号<br/>服务：150-250&nbsp;吹+做晚上出现<br/>备注：鸡头&nbsp;WCgh13148888微信",point:"121.002599|30.889206",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ,{title:"韦燕浴池",content:"位置：曹杨新村街道梅岭北路105号&nbsp;菜场二楼<br/>服务：吹+做&nbsp;260<br/>备注：老板后台硬",point:"121.415576|31.246985",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ,{title:"谢公兴&nbsp;巷子里",content:"位置：宁波市北仑区小港街道&nbsp;谢公兴&nbsp;巷子里&nbsp;站街<br/>服务：150-200&nbsp;吹+做<br/>备注：偶尔有嫩妹",point:"121.73035|29.951191",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ,{title:"虹桥加油站",content:"位置：中山北路虹桥加油站&nbsp;旁边小巷子，进去一直往里走是一条街<br/>服务：150-250&nbsp;吹+做<br/>备注：",point:"118.774054|32.079563",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ,{title:"育英中学",content:"位置：福建路&nbsp;育英中学对面没有店名的门面房里晚上有年轻小姐<br/>服务：吹+做&nbsp;200<br/>备注：",point:"118.771443|32.088922",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ,{title:"君歌洪亮洗浴",content:"位置：建邺区应天大街772-1号&nbsp;君歌洪亮<br/>服务：澡堂子上楼&nbsp;300&nbsp;全套<br/>备注：",point:"118.763567|32.020507",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ,{title:"大纱帽巷",content:"位置：新街口附近<br/>大纱帽巷&nbsp;从成贤街进，走50米左右会有2个JT问你AM不，再往前走30米还有一个，应该是3家不同的<br/>服务：&nbsp;200直接做&nbsp;+100有吹&nbsp;<br/>备注：年纪25左右&nbsp;曾经看到过一个大长腿",point:"118.800318|32.055981",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ,{title:"星座网咖",content:"位置：建宁路，钟阜路附近，导航星座网咖！往右走50米，一个水果摊旁边&nbsp;3个妹子&nbsp;看到一个长得像王心凌的<br/>服务：吹&nbsp;+做&nbsp;300<br/>备注：态度不怎么样",point:"118.771941|32.099595",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ,{title:"云会大浴场",content:"位置：余杭区西南山路47号<br/>服务：全套&nbsp;300-400<br/>备注：",point:"120.101396|30.419378",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ,{title:"西溪湿地附近鸡头",content:"位置：杭州西溪湿地附近<br/>服务：500&nbsp;口暴&nbsp;性价比不高<br/>备注：&nbsp;鸡头电话&nbsp;&nbsp;15394207660",point:"120.069291|30.274179",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ,{title:"丽水湖桑拿",content:"位置：雨花台区赛虹桥街道小行路2-4号中录网吧楼下<br/>服务：230-330&nbsp;吹+做<br/>备注：少妇居多",point:"118.768573|31.998946",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
 		 ];
     //创建marker
     function addMarker(){
@@ -196,7 +228,7 @@
     }
     //创建一个Icon
     function createIcon(json){
-        var icon = new BMap.Icon("http://map.baidu.com/image/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        var icon = new BMap.Icon("https://map.baidu.com/image/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
         return icon;
     }
 //标注线数组
