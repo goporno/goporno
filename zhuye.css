@@ -1,0 +1,134 @@
+/** body marginset **/
+body{
+    font-family: 'Microsoft YaHei', Arial, sans-serif; margin:0; background-image: url("head/logo320x180.gif"); background-repeat: repeat; background-position: -15px 15px; background-size: 120px;background-color: white;opacity: 1; 
+}
+ /** waring!!   mulyiple size image **/
+hr{ 
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+    /** div menu set and hover bold **/
+.menu:hover{
+    font-weight: bold;
+    font-size: large;
+    text-shadow: 0 0 2px grey;
+    
+    background: linear-gradient(to right, rgba(255,166,0,0), rgb(255, 166, 0, 1),  rgba(255,166,0,0));
+}
+.menu{
+    width: 18%;
+    height: 35px;
+    background-color: white;
+    display:inline-block;
+    text-align: center;
+    line-height: 35px;
+}
+/** content in center of div **/
+.center{display: flex;
+        justify-content: center;
+        align-items: center;}
+
+/** 居中的 div **/
+.juzhong{
+    margin-inline: auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;   
+}
+
+.advt{width: 360px;
+      height: 480px;
+      font-size:x-large;
+      color: rgb(255, 255, 255);
+      
+      margin: 2px;
+      text-align: center;
+      -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+      font-weight: bolder;
+    
+}
+
+.smallapp:hover{
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 12px #ffffff;
+    rotate: 15deg;
+    
+
+}
+
+
+
+.tail{ 
+    display: flex; 
+    justify-content: center;
+    width: 90%;
+    height: 360px;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    align-items: center;
+    /* text-align: center; */
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    font-weight: bolder;
+    
+    background-image: url(imge/支付背景图.jpg);background-size:cover ;
+}
+
+
+.h1{
+    margin: 12px;
+    font-size:x-large;
+    font-style: italic;
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0); 
+}
+
+.h2{
+    font-size:medium;
+   
+    font-family: 'Microsoft YaHei', Arial, sans-serif; 
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+}
+
+.h3{
+    font-size:smaller;
+    
+    font-family: 'Microsoft YaHei', Arial, sans-serif; 
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+}
+
+/**下载链接 <a herf> **/
+a.download{
+    font-size:large;
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font: bold;
+}
+
+
+
+.广告位底图{ 
+    margin: 5px;
+    width: 360px;
+    height: 240px;
+    background-size:cover ;
+}
+
+
+.广告位{ 
+    height: 240px;
+    padding-left:  150px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;   
+    background-color: white;
+    background: linear-gradient(to left, rgba(255,255,255,1),rgba(255,255,255,0.6), rgb(255, 255, 255, 0.1));
+    
+}
+
+.广告位:hover{
+    box-shadow: 0 0 5px grey;
+    text-shadow: 0 0 5px rgb(255, 166, 0);
+}
