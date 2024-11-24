@@ -21,8 +21,13 @@
 
 	</script>
 
-
+	
 	<meta https-equiv="Content-Type" content="text/html; charset=GBK">
+
+
+	<!-- 解决 This request has been blocked; the content must be served over HTTPS. 的报错问题 -->
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	
 
 	 <!--mobile fit-->
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,">
@@ -55,7 +60,8 @@
 	nSxiPohfziUaCuONe4ViUP2N /*亲测可用*/
 	PlhFWpA02aoURjAOpnWcRGqw7AI8EEyO /*亲测可用*/ 
 	一下密匙 以备不时之需-->
-	<script type="text/javascript" src="https://api.map.baidu.com/api?v=1.4&ak=PlhFWpA02aoURjAOpnWcRGqw7AI8EEyO"></script>
+	<!-- key + &s=1; 试图解决web报错问题 -->
+	<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=PlhFWpA02aoURjAOpnWcRGqw7AI8EEyO&s=1;"></script>
 </head>
 
 
