@@ -116,6 +116,35 @@ a.download{
     background-size:cover ;
 }
 
+.楼凤牌{ 
+    margin: 5px;
+    width: 180px;
+    height: 120px;
+    border: 0.5px solid  grey;
+    display: block;
+    
+}
+
+.楼凤牌-图片{
+    margin: 0px;
+    display: inline-block;
+    width: 90px;
+    height: 120px;
+    background-size:cover ;
+    background-position:center;
+    background-color: whitesmoke;
+}
+
+.楼凤牌-文字{
+    font-size: small;
+    display: inline-block;
+    margin: 0px;
+    width: 80px;
+    vertical-align: top;
+    text-align:center; 
+    
+    background-color: whitesmoke(122, 122, 122);
+}
 
 .广告位{ 
     height: 240px;
