@@ -161,3 +161,13 @@ a.download{
     box-shadow: 0 0 5px grey;
     text-shadow: 0 0 5px rgb(255, 166, 0);
 }
+
+/* 字体闪烁 */
+@keyframes blink {
+    10% { background-color: rgba(214, 67, 255, 0.3); }
+    90% { background-color: rgba(156, 255, 94, 0.3); }
+  }
+
+.blinking-text {
+    animation: blink 1s infinite; /* 1s为动画周期，可以根据需要调整 */
+  }
