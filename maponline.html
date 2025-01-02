@@ -372,9 +372,24 @@
 	var nowyear = nowTime.getFullYear();
 	var nowmonth = nowTime.getMonth() + 1;
 	var nowday = nowTime.getDate();
-	console.log(nowyear*12*100 + nowmonth*100 + nowday);
-	var threeMonthAgo = nowyear*12*100 + (nowmonth - 3) *100 + nowday;
-	var sixMonthAgo = nowyear*12*100 + (nowmonth - 6) *100 + nowday;
+	
+	var threeMonthAgo;
+	if (nowmonth > 3 ) {
+		threeMonthAgo = nowyear*10000 + (nowmonth - 3) *100 + nowday;
+	} else {
+		threeMonthAgo = (nowyear - 1 )*10000 + (nowmonth + 9) *100 + nowday;
+	};
+	var sixMonthAgo ;
+	if (nowmonth > 3 ) {
+		sixMonthAgo = nowyear*10000 + (nowmonth - 6) *100 + nowday;
+	} else {
+		sixMonthAgo = (nowyear - 1 )*10000 + (nowmonth + 6) *100 + nowday;
+	};
+
+
+	console.log(nowTime);
+	console.log(threeMonthAgo);
+	console.log(sixMonthAgo);
 
 
 
@@ -595,6 +610,9 @@ function filter(){
 //恢复数组：
 function copy(){
 	markerArr = org_markerArr;
+	for (var i = 0; i < markerArr.length; i++) {
+		markerArr[i].icon = {w:23,h:25,l:46,t:21,x:9,lb:12};    
+        };
 
 					// //创建和初始化地图函数：
 					// function initMap(){
